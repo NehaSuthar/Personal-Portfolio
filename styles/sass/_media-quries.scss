@@ -1,0 +1,74 @@
+@media (max-width: 1050px) {
+
+    .aside {
+        left: -30%;
+        width: 30%;
+    }
+    .aside.aside-open  {
+        left: 0;
+    }
+    .wrapper {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .nav-wrapper .navbar-toggler {
+        display: block;
+    }
+    .skill-item{
+        margin-left: 10px;
+    }
+    .about-content {
+        text-align: center;
+        .about-desc{
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .aside {
+        min-width: 230px;
+        left: -230px;
+        width: auto;
+    }
+    .aside-footer ul {
+        padding: 15px 10px;
+    }
+    .glass {
+        font-size: 8vh;
+    }
+    .section .container {
+        padding: 0 15px;
+    }
+}
+@media (max-width:610px) {
+    .home-text-box h1{
+        font-size: 3.5rem;
+    }
+    .home-text-box p{
+        font-size: 1.70rem;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-img{
+        flex-basis: 100%;
+    }
+    .about-content {
+        margin-top: 40px;
+    }
+    .project-item{
+        flex-direction: column;
+    }
+    .project-item-container .project-item:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-details ul{
+        padding:20px;
+    }
+}
+

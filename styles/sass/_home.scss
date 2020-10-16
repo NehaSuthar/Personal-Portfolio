@@ -1,0 +1,177 @@
+/*-----------------------------------------aside navbar section-------------------------*/
+.aside {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    bottom: 0;
+    width: 18%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    transition: all 0.5s ease-in-out 0s;
+}
+.aside-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fa1f55;
+    background: linear-gradient(45deg, #fa1f55 0%, #fd735a 100%);
+}
+.aside-footer ul {
+    padding: 25px;
+}
+.aside-footer a {
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.avatar img {
+    height: 160px;
+    width: 160px;
+    border: 2px outset #ed4242;
+    padding: 10px;
+    border-radius: 50%;
+}
+/*------------------------------------------NavBar Section---------------------------------------*/
+.nav-wrapper {
+    height: 100%;
+}
+.navbar {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem 1rem;
+    background: #2a2d35;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 20px;
+    list-style: none
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.4;
+    padding: 1rem 1rem;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    opacity: 1;
+    text-decoration: none;
+}
+.navbar-nav .active{
+    opacity: 1;
+    text-decoration: none;
+}
+.aside-footer a:hover,
+.aside-footer a:focus{
+    opacity: .3;
+}
+.social-icon{
+    padding-left: 0;
+    list-style: none
+}
+.social-icon-list{
+    display: inline-block
+}
+.social-icon-list:not(:last-child) {
+    margin-right: .5rem
+}
+/*---------------------------------------Home Background section-------------------------------*/
+.section-home {
+    height: 100vh;
+    position: relative;
+    background-image:  url("../assets/images/home-bg-1.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-text-box {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+}
+
+.home-text-box:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(45deg, black 70%, #fd735a 30%);
+    opacity: 0.4;left: 0;right: 0;top: 0;
+}
+.home-text-box h1{
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    color: white;
+}
+.home-text-box p{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    color: white;
+}
+.nav-wrapper .navbar-toggler {
+    position: absolute;
+    left: 100%;
+    z-index: 20;
+    top: 0;
+    padding: 0;
+    display: none;
+}
+/*------------------hamburger menu item ....styling is taken from  portfolio theme----------------*/
+.ham {
+    cursor: pointer;
+    transition: transform 400ms;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#fff;
+    stroke-width:3.5;
+    stroke-linecap:round;
+}
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+

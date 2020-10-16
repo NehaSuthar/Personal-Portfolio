@@ -1,0 +1,16 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.skill-item{
+    flex-basis: 10%;
+    align-self: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.skill-icon{
+    font-size: 3.5rem;
+}

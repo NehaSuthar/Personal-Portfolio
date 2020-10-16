@@ -1,0 +1,90 @@
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+.about-img{
+    flex-basis: 30%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+.img-thumbnail {
+    background-color: #25252d;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.about-content{
+    flex-basis: 65%; 
+    padding-right: 15px;
+    padding-left: 15px
+}
+.about-social a.downloadCV span {
+    padding-left: 5px;
+}
+
+.about-desc h2 {
+    font-size: 2rem;
+}
+
+.about-desc-info a {
+    font-size: 14px;
+    color: #DEDDE0;
+}
+
+.about-desc-info a {
+    text-decoration: underline;
+}
+
+.about-desc-info a:hover {
+    text-decoration: none;
+}
+.btn {
+    margin-top:30px;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.btn:hover {
+    color: #212529;
+    text-decoration: none
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.btn:disabled {
+    opacity: .65
+}
+
+.btn {
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: none;
+    text-transform: uppercase;
+    outline: none !important;
+    background-color: #fd735a;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    min-width: 140px;
+}
+
+.btn:hover {
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+}
