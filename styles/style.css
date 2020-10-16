@@ -330,6 +330,10 @@ a {
   left: 0;
 }
 
+.goback {
+  text-align: center;
+}
+
 .footer {
   text-align: center;
 }
