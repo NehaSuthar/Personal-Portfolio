@@ -19,27 +19,56 @@
 .contact-details li{
     margin-left:30px;
 }
-.contact-details a:hover,
-.contact-details a:focus{
-    opacity: .4;
-}
 .contact-details i {
     font-size: 30px;
 }
 
 .contact-details a {
+    cursor: pointer;
     font-size: 18px;
     font-weight: 500;
     color: #DEDDE0;
-    text-decoration: underline;
 }
-
-.contact-details a:hover {
+.contact-details a:hover,
+.contact-details a:focus{
+    opacity: .4;
+}
+.copy-email a:hover,
+.copy-email a:focus{
     text-decoration: none;
+    opacity: 1;
 }
 .copy-email{
     text-align: center;
+    padding:1rem;
 }
 .contact-section h2{
     padding-top: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+font-size: .7rem;
+visibility: hidden;
+width: 140px;
+background-color: white;
+color: #555;
+text-align: center;
+border-radius: 6px;
+padding: 3px;
+position: absolute;  
+bottom: 100%;
+left: 50%;
+margin-left: -75px;
+z-index: 1;
+opacity: 0;
+transition: opacity 0.2s;
+}
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
 }
