@@ -71,4 +71,19 @@
         padding:20px;
     }
 }
+@media(max-width:450px){
+    .container{
+        padding:0 5px;
+    }
+    .project-item{
+        padding:10px;
+    }
+    .project-desc,
+    .project-img{
+        flex-basis: 100%;
+    }
+    .skill-item p{
+        font-size:.8rem;
+    }
+}
 

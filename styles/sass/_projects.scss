@@ -44,14 +44,11 @@
 }
 .project-tech{
     display: inline-block;
-    padding: .25em .4em;
-    font-size: 75%;
-    font-weight: 700;
+    padding: .25rem .4rem;
     line-height: 1;
     text-align: center;
     vertical-align: baseline;
     border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     background: #fa1f55;
     background: linear-gradient(45deg, #fa1f55 0%, #fd735a 100%);
 }

@@ -301,6 +301,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  padding: 1rem .25rem;
 }
 
 .section-light .b-box {
@@ -324,6 +325,7 @@ a {
   top: 5px;
   z-index: 1000;
   color: white;
+  background-color: black;
 }
 
 .skip-link:focus {
@@ -433,6 +435,10 @@ a {
   text-transform: uppercase;
   opacity: 0.4;
   padding: 1rem 1rem;
+}
+
+.navbar-nav .nav-link a.active {
+  opacity: 1;
 }
 
 .navbar-nav .nav-link:hover,
@@ -705,18 +711,32 @@ a {
 }
 
 .skill-item {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
   margin-left: 30px;
   margin-bottom: 30px;
+  min-width: 100px;
 }
 
 .skill-icon {
   font-size: 3.5rem;
+}
+
+.img-icon {
+  width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-icon img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin-bottom: 4px;
 }
 
 .project-item-container {
@@ -790,17 +810,11 @@ a {
 
 .project-tech {
   display: inline-block;
-  padding: .25em .4em;
-  font-size: 75%;
-  font-weight: 700;
+  padding: .25rem .4rem;
   line-height: 1;
   text-align: center;
   vertical-align: baseline;
   border-radius: .25rem;
-  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
   background: #fa1f55;
   background: linear-gradient(45deg, #fa1f55 0%, #fd735a 100%);
 }
@@ -980,5 +994,22 @@ a {
   }
   .contact-details ul {
     padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 0 5px;
+  }
+  .project-item {
+    padding: 10px;
+  }
+  .project-desc,
+  .project-img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skill-item p {
+    font-size: .8rem;
   }
 }

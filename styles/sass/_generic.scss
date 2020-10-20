@@ -62,6 +62,7 @@ a {
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease-in-out 0s;
+    padding:1rem .25rem;
 }
 .section-light .b-box {
     background: #25252d;
@@ -80,6 +81,7 @@ a {
     top: 5px;
     z-index: 1000;
     color: white;
+    background-color: black
   }
   
   .skip-link:focus {
@@ -94,3 +96,4 @@ a {
   .footer p{
       padding-bottom:1rem;
   }
+ 
